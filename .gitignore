@@ -1,0 +1,14 @@
+# Python & Environment
+venv/
+__pycache__/
+*.pyc
+
+# API Keys and Secrets (SABSE IMPORTANT)
+.env
+
+# Node.js (Frontend dependencies)
+email-assistant-frontend/node_modules/
+email-assistant-frontend/dist/
+
+# Machine Learning Models (Optional, par badi files avoid karni chahiye)
+*.pkl

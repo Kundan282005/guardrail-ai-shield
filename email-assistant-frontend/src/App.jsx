@@ -12,7 +12,7 @@ export default function App() {
     }
     setIsLoading(true);
     try {
-      const response = await fetch('/api/summarize', {
+      const response = await fetch('https://guardrail-ai-shield-1.onrender.com/api/summarize', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email_text: text }),
@@ -32,6 +32,7 @@ export default function App() {
       <header className="bg-gray-800 border-b border-gray-700 py-4 shadow-lg">
         <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
           <h1 className="text-xl font-black tracking-wider text-cyan-400">
+            
             GUARDRAIL <span className="text-gray-500 font-normal text-xs bg-gray-900 border border-gray-700 ml-2 px-2 py-0.5 rounded">V1.1</span>
           </h1>
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Enterprise Fraud Shield</p>
